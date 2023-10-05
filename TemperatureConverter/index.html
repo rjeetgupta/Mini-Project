@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperture Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <label for="inputTemp">Enter Temperature : </label>
+            <input type="text" id="inputTemp" placeholder="Enter Temperature Here">
+
+            <label for="outputTemp">Output Temperature : </label>
+            <input type="text" id="outputTemp" placeholder="Output Here" readonly>
+
+            <div class="btn">
+                <input type="button" value="Celcius" id="cButton">
+                <input type="button" value="Fahrenheit" id="fButton">
+                <input type="reset" value="Reset">
+            </div>
+
+            <p id="activeTag"></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
