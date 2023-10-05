@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(228, 171, 97);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.stopwatch{
+    width: 90%;
+    max-width: 400px;
+    font-size: 1em;
+    text-align: center;
+    margin: 18%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+    background: #212121;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 60px;
+    margin: 25px 10px;
+    cursor: pointer;
+}
+
+.btn > img:nth-child(2){
+    width: 80px;
+}
