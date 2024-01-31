@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+:root {
+    --text-color: #828282;
+    --background-color: #27272b;
+    --heading-text-color: #27272b;
+    /* --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555; */
+}
+.main_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav_bar{
+    width: 100%;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27272b;
+    color: #ffffff;
+}
+.nav_logo{
+    width: 70%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+.nav_link{
+    width: 60%;
+    /* height: 3rem; */
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_link  a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+/* @media only screen and (max-width: 680px) {
+    .nav_logo{
+        width: 30%;
+    }
+    .nav_link{
+        width: 50%
+    }
+} */
+/* @media only screen and (min-width: 570px) {
+    .nav_logo{
+        width: 10%;
+    }
+    .nav_link{
+        width: 90%
+    }
+} */
+
+.header{
+    /* display: flex; */
+    width: 100%;
+}
+
+.header img{
+    width: 100%;
+    background-size: contain;
+    height: fit-content;
+    overflow: hidden;
+    object-fit: cover;
+}
+/* .header .header_bg{
+    height: fit-content;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+} */
+
+/* .header_bg img{
+    width: 99%;
+    height: 100%;
+} */
+
+
+.card-section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box{
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fair-play{
+    width: 33%;
+    padding: 1.2rem 1rem;
+    text-align: center;
+}
+
+.fair-play-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fair-play-icon img{
+    width: 3rem;
+    height: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* padding: 1rem; */
+}
+
+.card-text{
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    line-height: 1.6rem;
+    color: #828282;
+}
+
+
+.about-more{
+    text-align: center;
+    padding: .698rem;
+    background-color: var(--background-color);
+    color: #ffffff;
+    border-radius: 2rem;
+}
+
+.creative-art{
+    width: 33%;
+    padding: 1.2rem 1rem;
+    text-align: center;
+}
+
+.creative-art-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.creative-art-icon img{
+    width: 3rem;
+    height: 3rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+.slick-feature{
+    width: 33%;
+    padding: 1.2rem 1rem;
+    text-align: center;
+}
+
+.slick-feature-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.slick-feature-icon img{
+    width: 4rem;
+    height: 4rem;
+    padding-bottom: 1rem;
+    /* border: 1px solid; */
+    border-radius: 50%;
+}
+
+.feature-section{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box{
+    margin-top: 2rem;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.feature1{
+    width: 50%;
+    padding: 1rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature1-image{
+    width: 100%;
+    height: 100%;
+}
+
+.feature-title{
+    margin: 1rem;
+    
+}
+
+.heading-text{
+    font-size: 1.7rem;
+    color: var(--heading-text-color);
+}
+
+.feature-description p{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.feature2{
+    width: 50%;
+    padding: 1rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+}
+
+.feature2-image{
+    width: 100%;
+    height: 100%;
+}
+
+.feature2-image{
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%; 
+}
