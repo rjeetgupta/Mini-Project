@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#nav-bar{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d1b2a;
+    color: #fff;
+}
+
+#nav-bar .nav-link{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#nav-bar .nav-link a{
+    text-decoration: none;
+    color: white;
+}
+
+#nav-bar .start-btn{
+    border: 1px solid white;
+    padding: 0.3rem 1rem;
+    border-radius: 0.434rem;
+}
+
+#heading{
+    margin-top: 11rem;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading .title > h2{
+    font-size: 2.453rem;
+}
+
+#heading .title-description {
+    width: 70%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#heading .explore-btn .demo-btn{
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0.753rem 2rem;
+    margin-right: 1rem;
+    color: #ffffff;
+    border-radius: 0.353rem;
+    cursor: pointer;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.demo-btn:hover{
+    background-color: #fff;
+}
+
+.benifits-btn{
+    font-weight: 900;
+    font-size: 1rem;
+    border-radius: 0.353rem;
+    padding: 0.753rem 2rem;
+    color: #1619b8;
+    background-color: #fff;
+}
+
+
+.benifits-btn:hover{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    color: #ffffff;
+}
+
+
+/* Trusted company details */
+
+
+#company-trust{
+    margin-top: 15rem;
+    margin-right: 1rem;
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #62a1b821;
+}
+
+#company-trust .google, 
+.github, .twitter, .instagram,
+.linkedin{
+    display: flex;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-right: 1rem;
+}
+
+#company-trust img{
+    width: 2rem;
+}
+
+
+/* How company works */
+
+#company-working{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#company-working .title .title-text{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+#company-working .title-description{
+    width: 50%;
+    font-size: 0.765rem;
+    text-align: center;
+    color: #929495;
+    margin-bottom: 2rem;
+}
+
+#company-working .oppurtunity{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#company-working .image{
+    margin-left: 4.7rem;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+#company-working > .oppurtunity > .search-oportunities{
+    width: 25%;
+    padding: 2rem;
+}
+
+.oppurtunity .title{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.oppurtunity .description{
+    text-align: center;
+    color: #929495;
+    font-weight: 100;
+    font-size: 0.835rem;
+}
+
+#company-working .oppurtunity .reach-clients{
+    width: 25%;
+    padding: 2rem;
+}
+
+#company-working .oppurtunity .get-rewards{
+    width: 25%;
+    padding: 2rem;
+}
+
+#benifits{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #edf6f9;
+}
+
+#benifits .about-more img{
+    margin-top: 1rem;
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+#benifits .benifits-text{
+    margin-top: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#benifits .benifits-text .title{
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.title-description .description-text{
+    margin: 1rem 0;
+    color: #929495;
+}
+
+.title-description button{
+    border: 0.23px solid;
+    margin-top: 0.965rem;
+    padding: 0.726rem 1rem;
+    border-radius: 0.447rem;
+    cursor: pointer;
+}
+
+
+/* About team member  */
+
+#team-info{
+    margin-top: 4.548rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-info .title{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+#team-info .title-description{
+    width: 60%;
+    text-align: center;
+    color: #929495;
+    line-height: 1rem;
+    margin: 0.863rem 0;
+}
+
+#team-info .team-member {
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#team-info .team-member .seo-head{
+    width: 25%;
+    padding: 1rem 1.5rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+#team-info .team-member img{
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#team-info .team-member .seo-head
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#team-info .team-member .seo-head
+.about-seo-head{
+    color: #929495;
+    font-size: 1rem;
+    letter-spacing: 0vmin;
+    line-height: 1rem;
+}
+
+#team-info .team-member .manager{
+    width: 25%;
+    padding: 1rem 1.5rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+#team-info .team-member .manager
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#team-info .team-member .manager
+.about-manager{
+    color: #929495;
+    font-size: 0.82rem;
+    letter-spacing: 0vmin;
+    line-height: 1rem;
+}
+
+#team-info .team-member .marketing{
+    width: 25%;
+    padding: 1rem 1.5rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+}
+
+#team-info .team-member .marketing
+h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#team-info .team-member .seo-head span,
+#team-info .team-member .manager span,
+#team-info .team-member .marketing span{
+    font-style: italic;
+    border-bottom: 2px solid #3F5EFB;
+    margin-bottom: 0.573rem;
+}
+
+
+#team-info .team-member .marketing
+.about-marketing{
+    color: #929495;
+    font-size: 0.82rem;
+    letter-spacing: 0vmin;
+    line-height: 1rem;
+}
+
+#team-info .team-member .seo-head
+.social-media-link,
+#team-info .team-member .manager
+.social-media-link,
+#team-info .team-member .marketing
+.social-media-link{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+#copy-right-text .social-media-link
+.fa-brands{
+    margin-right: 1rem;
+    color: #0d1b2a;
+}
+
+#team-info .team-member 
+.seo-head:hover, .manager:hover,
+.marketing:hover{
+    h2{
+        color: #edf6f9;
+    }
+    color: #929495;
+    background-color: #0d1b2a;
+}
+
+
+/* footer section starts here */
+
+#footer-section{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #22223b;
+    color: #edf6f9;
+}
+
+#footer-section .title{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+#footer-section .title-description{
+    width: 60%;
+    text-align: center;
+    margin-top: 0.765rem;
+    margin-bottom: 2.5rem;
+}
+
+#footer-section .input-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-section .input-text .left-side-input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 80%;
+    border: 0.458px solid;
+    padding: 0.863rem;
+    border-radius: 0.438rem;
+    margin: 0.585rem 0;
+    background-color: #22223b;
+    color: #edf6f9;
+}
+
+textarea{
+    border: 0.458px solid;
+    padding: 0.863rem;
+    border-radius: 0.438rem;
+    color: #edf6f9;
+    background-color: #22223b;
+}
+
+#footer-section button{
+    font-weight: 600;
+    border: 0.558px solid;
+    padding: 0.485rem 1rem;
+    border-radius: 0.572rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+#copy-right-text{
+    width: 100%;
+    background-color: #2f3e46;
+}
+
+#copy-right-text .title{
+    padding-top: 4rem;
+    text-align: center;
+    color: #edf6f9;
+}
+
+
+#copy-right-text .title a{
+    text-decoration: none;
+    color: #1619b8;
+}
+
+#copy-right-text .social-media-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    cursor: pointer;
+}
+
+#copy-right-text .social-media-link
+.fa-brands{
+    margin-right: 1rem;
+    color: #0d1b2a;
+}
