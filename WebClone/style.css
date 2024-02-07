@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html, body{
     width: 100vw;
     height: 100vh;
 }
@@ -11,9 +11,6 @@ body{
     --text-color: #828282;
     --background-color: #27272b;
     --heading-text-color: #27272b;
-    /* --light-gray: #f0f0f0;
-    --gray: #808080;
-    --dark-gray: #555; */
 }
 .main_container{
     width: 100%;
@@ -71,29 +68,62 @@ body{
     }
 } */
 
+
+/* header starts from here  */
 .header{
-    /* display: flex; */
     width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .header img{
     width: 100%;
-    background-size: contain;
     height: fit-content;
     overflow: hidden;
     object-fit: cover;
+    position: relative;
 }
-/* .header .header_bg{
-    height: fit-content;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-} */
+.upper-part{
+    width: 100%;
+    position: absolute;
+    left: 33%;
+    top: 10%;
+}
 
-/* .header_bg img{
-    width: 99%;
-    height: 100%;
-} */
+.upper-part img{
+    width: 6rem;
+    height: 6rem;
+    margin-left: 6.5rem;
+    margin-bottom: 2rem;
+}
+
+.upper-part .heading{
+    width: 100%;
+}
+
+.upper-part .heading .title{
+    width: 35%;
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #ffffff;
+    
+}
+
+.upper-part .heading span{
+    font-size: 3rem;
+    font-weight: 300;
+    color: #ffffff;
+}
+.upper-part .btn-text{
+    display: block;
+    margin-top: 3.5rem;
+    width: 12rem;
+    padding: 0.365rem;
+    border-radius: 0.736rem;
+    background-color: #67c6b5;
+    color: #ffffff;
+    margin-left: 5rem;
+}
 
 
 .card-section{
@@ -169,7 +199,6 @@ body{
     width: 3rem;
     height: 3rem;
     padding-bottom: 1rem;
-    /* border: 1px solid; */
     border-radius: 50%;
 }
 .slick-feature{
@@ -260,3 +289,220 @@ body{
     width: 100%;
     height: 100%; 
 }
+
+/* Skill section starts from here */
+
+.skill-section{
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.skill-title{
+    text-align: center;
+    color: #fff;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.skill {
+    /* max-width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.left-side{
+    width: 30%;
+}
+.right-side{
+    width: 30%;
+}
+
+
+.html, .cpp, .php, .dbms, .java, .photo, .webtech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.skill > span{
+    float: right;
+    color: #ffffff;
+}
+
+.skill-bar {
+    height: 0.332rem;
+    background-color: #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    background-color: #67c6b5;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+
+/* Company section start here */
+
+
+.company-emp-details{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #67c6b5;
+}
+
+.employee-box{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-writers{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emp-strength{
+    border: none;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+}
+
+.emp-text{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    font-weight: bolder;
+}
+
+.coders{
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designer{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-member{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-member-details{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-box{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 2rem;
+}
+
+.team-member-img{
+    width: 100%;
+    margin-left: 9rem;
+}
+
+.img1{
+    width: 8rem;
+    height: 8rem;
+    margin: 1.2rem;
+    object-fit: contain;
+}
+
+
+/* footer seciton starts here */
+
+.footer-section{
+    width: 100%;
+    background-color: #67c6b5;
+}
+
+.footer-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.address-text{
+    text-align: center;
+    font-size: 0.87rem;
+    color: #fff;
+}
+.email, .unsubcribe{
+    margin-top: 0.23rem;
+    text-align: center;
+    font-size: 0.872rem;
+    color: #fff;
+    margin-bottom: 3.5rem;
+    cursor: pointer;
+}
+
+.footer-copyright{
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.copyright-title{
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    padding: 2rem 2rem;
+}
+
