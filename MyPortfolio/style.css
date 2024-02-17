@@ -1,21 +1,21 @@
-:root{
+:root {
     --background-color: #181616;
     --text-color: #CCCCCC;
 }
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,9 +24,8 @@ html, body{
     background-color: var(--background-color);
 }
 
-
 /* Nav-bar starts from here */
-#nav-bar{
+#nav-bar {
     width: 100%;
     height: 4rem;
     display: flex;
@@ -36,16 +35,16 @@ html, body{
     justify-content: space-evenly;
     background-color: #222222;
     color: #CCCCCC;
-    /* position: fixed; */
+    margin-bottom: 2rem;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-#nav-bar #nav-logo{
+#nav-bar #nav-logo {
     text-align: center;
     font-size: 1.3rem;
 }
 
-#nav-link{
+#nav-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,46 +55,36 @@ html, body{
     color: #ffffff;
 }
 
-#nav-link a{
+#nav-link a {
     text-decoration: none;
     color: #fff;
 }
 
-#nav-bar #nav-link a:hover{
+#nav-bar #nav-link a:hover {
     color: #FF8911;
 }
 
-#nav-bar #download-cv-btn{
+#nav-bar #download-cv-btn {
     padding: 0.654rem 1rem;
     border-radius: 0.434rem;
-    /* font-weight: bold; */
     font-size: 1rem;
     cursor: pointer;
     color: #ccc;
     background-color: #222222;
 }
 
-#nav-bar #download-cv-btn:hover{
+#nav-bar #download-cv-btn:hover {
     color: #ccc;
     background-color: #fb8500;
 }
 
-
 /* Nav-bar ends here */
-
-
-
-
-
-
-
-
 
 /* Personal details starts here */
 
-#personal-details{
+#personal-details {
     max-width: 90%;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,7 +94,7 @@ html, body{
     color: #CCCCCC;
 }
 
-#personal-details .intro{
+#personal-details .intro {
     width: 50%;
     height: 100%;
     display: flex;
@@ -114,18 +103,18 @@ html, body{
     align-items: center;
 }
 
-#personal-details .intro .intro-text{
+#personal-details .intro .intro-text {
     width: 100%;
     font-size: 3rem;
     font-weight: 400;
 }
 
-#personal-details .intro .about-me{
+#personal-details .intro .about-me {
     margin-top: 1.2rem;
     font-size: 1.3rem;
 }
 
-#personal-details .intro .about-me-btn{
+#personal-details .intro .about-me-btn {
     margin-top: 2rem;
     width: 8rem;
     align-self: flex-start;
@@ -140,79 +129,70 @@ html, body{
     background-color: #fb8500;
 }
 
-#personal-details .profile{
-    width: 35%;
-    height: auto;
+#personal-details .profile {
+    max-width: 35%;
+    height: 75vh;
 }
 
-#personal-details .profile img{
-    width: 19rem;
+#personal-details .profile img {
+    max-width: 100%;
+    min-width: 0;
     height: 28rem;
+    align-self: center;
     object-fit: contain;
-    border-radius: 129rem 45rem 
+    border-radius: 50px;
 }
-
 
 /* Personal details ends here */
 
-
-
 /* About section starts here */
 
-
-#about-section{
+#about-section {
     max-width: 90%;
-    height: 100vh;
+    min-width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 3rem;
     color: #CCCCCC;
     background-color: var(--background-color);
 }
 
-#about-section .about{
-    width: 50%;
+#about-section .about {
+    max-width: 50%;
     font-size: 1.5rem;
     padding-right: 4rem;
     line-height: 2rem;
 }
 
-#about-section .about .about-title{
+#about-section .about .about-title {
     font-size: 3rem;
 }
 
-#about-section .about .about-me{
+#about-section .about .about-me {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 1.5rem;
 }
 
-
-
 /* About section ends here */
-
-
-
-
-
-
 
 /* Service section starts here */
 
-
-#services-section{
+#services-section {
     max-width: 90%;
-    height: 100vh;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    gap: 2rem;
     color: aliceblue;
     background-color: var(--background-color);
+    margin-bottom: 2rem;
 }
 
-#services-section .service-item{
+#services-section .service-item {
     border: 1px solid #CCCCCC;
     border-radius: 1rem;
     max-width: 30%;
@@ -223,37 +203,28 @@ html, body{
     align-self: center;
 }
 
-/* #services-section .service-item:hover{
-
-} */
-
-#services-section .service-item 
-.service-icon{
+#services-section .service-item .service-icon {
     margin-top: 2rem;
-    /* margin-bottom: 1rem; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#services-section .service-item 
-.service-icon img{
+#services-section .service-item .service-icon img {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     background-color: #CCCCCC;
 }
 
-#services-section .service-item
-.service-title{
+#services-section .service-item .service-title {
     font-size: 1.7rem;
     text-align: center;
     padding: 2rem;
 }
 
-#services-section .service-item
-.service-description{
+#services-section .service-item .service-description {
     text-align: center;
     font-size: 1.4rem;
     padding: 0 2rem;
@@ -261,10 +232,7 @@ html, body{
     margin-bottom: 2rem;
 }
 
-
 /* Service section ends here */
-
-
 
 /* Skills section starts from here */
 
@@ -272,7 +240,6 @@ html, body{
     max-width: 90%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 100%;
     height: 100vh;
@@ -289,19 +256,12 @@ html, body{
 
 #skill-section .skill-container {
     width: 70%;
-    /* max-width: 90%; */
     margin-bottom: 1.5rem;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(2, 1fr);
 }
-
-/* #skill-section .skill {
-
-} */
 
 #skill-section .skill .skill-text {
     width: 70%;
@@ -310,7 +270,6 @@ html, body{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0.287rem;
-
 }
 
 #skill-section .skill-name {
@@ -325,28 +284,22 @@ html, body{
     color: var(--text-color);
 }
 
-progress{
+progress {
     width: 70%;
 }
 
-
-
 /* Skills section end here */
-
-
-
 
 /* Personal Project section starts here */
 
-
-#personal-project{
+#personal-project {
     max-width: 90%;
     height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-#personal-project .project-title{
+#personal-project .project-title {
     text-align: center;
     font-size: 3rem;
     font-weight: 600;
@@ -354,23 +307,12 @@ progress{
     margin-bottom: 8rem;
 }
 
-
-
-
-
-
-
-
-
 /* Personal project section ends here */
-
-
 
 /* contact me section starts here */
 
-#contact-me{
+#contact-me {
     max-width: 90%;
-    /* height: 100vh; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -379,14 +321,14 @@ progress{
     background-color: var(--background-color);
 }
 
-#contact-me .contact-me-title{
+#contact-me .contact-me-title {
     text-align: center;
     font-size: 3rem;
     font-weight: 600;
     color: #f0cd06f3;
 }
 
-#contact-me form{
+#contact-me form {
     margin-top: 2.3rem;
     width: 100%;
     display: flex;
@@ -395,22 +337,22 @@ progress{
     gap: 0 4rem;
 }
 
-#contact-me form .left-input{
+#contact-me form .left-input {
     width: 50%;
 }
 
-#contact-me form label{
+#contact-me form label {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-color);
 }
 
-label::after{
+label::after {
     content: "*";
     color: #e20808;
 }
 
-#contact-me form input{
+#contact-me form input {
     width: 100%;
     border: 0.458px solid;
     padding: 0.863rem;
@@ -420,19 +362,17 @@ label::after{
     color: #edf6f9;
 }
 
-input:focus{
-    /* outline: none; */
+input:focus {
     border: 0.458px solid #f0cd06f3;
-
-    box-shadow: 0 0 0 0.458px ;
+    box-shadow: 0 0 0 0.458px;
 }
 
-#contact-me form .right-input{
+#contact-me form .right-input {
     width: 50%;
     display: flex;
 }
 
-#contact-me form textarea{
+#contact-me form textarea {
     margin-top: 1.256rem;
     border: 0.458px solid;
     padding: 0.863rem;
@@ -441,8 +381,7 @@ input:focus{
     background-color: #181616;
 }
 
-#contact-me button{
-    /* width: 10%; */
+#contact-me button {
     font-weight: 400;
     border: 0.558px solid;
     padding: 0.485rem 1rem;
@@ -459,17 +398,14 @@ input:focus{
 
 
 
-
-
 /* Footer section starts from here */
 
-#footer-section{
+#footer-section {
     max-width: 90%;
-    /* height: 25vh; */
     background-color: var(--background-color);
 }
 
-#footer-section .footer-title{
+#footer-section .footer-title {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 600;
@@ -477,7 +413,7 @@ input:focus{
     margin-bottom: 1.5rem;
 }
 
-#footer-section .social-link{
+#footer-section .social-link {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -488,9 +424,10 @@ input:focus{
     cursor: pointer;
 }
 
-
-#footer-section .social-link
-.linkedin, .github, .twitter, .email{
+#footer-section .social-link .linkedin,
+#footer-section .social-link .github,
+#footer-section .social-link .twitter,
+#footer-section .social-link .email {
     width: 3.454rem;
     height: 3.454rem;
     border: 0.1px solid #ccc;
@@ -501,12 +438,12 @@ input:focus{
     background-color: #131212;
 }
 
-#footer-section .social-link
-.fa-brands, .fa-solid{
+#footer-section .social-link .fa-brands,
+#footer-section .social-link .fa-solid {
     color: white;
 }
 
-#footer-section .copy-right-text{
+#footer-section .copy-right-text {
     text-align: center;
     font-size: 1.3rem;
     color: var(--text-color);
@@ -514,3 +451,65 @@ input:focus{
 }
 
 /* Footer section ends here */
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    #nav-link {
+        display: none;
+    }
+
+    #nav-bar #download-cv-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #personal-details {
+        flex-direction: column;
+    }
+
+    #personal-details .intro {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #personal-details .profile {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #about-section .about {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    #services-section .service-item {
+        max-width: 90%;
+    }
+
+    #services-section .service-item .service-title,
+    #services-section .service-item .service-description {
+        padding: 1rem;
+    }
+
+    #skill-section .skill-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #about-section .about {
+        font-size: 1.2rem;
+    }
+
+    #services-section .service-item .service-title,
+    #services-section .service-item .service-description {
+        font-size: 1rem;
+    }
+
+    #skill-section .skill-title {
+        font-size: 2rem;
+    }
+}
