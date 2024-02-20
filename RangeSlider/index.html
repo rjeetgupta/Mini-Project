@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Range slider</title>
+    <style>
+        *{
+            margin-top: 2rem;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            max-width: 50%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+        h1{
+            margin-top: 4rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .range-slider{
+            margin-top: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        input{
+            margin-top: 1rem;
+            padding: 0.4rem 0;
+            padding-left: 1rem;
+            border: none;
+            border-bottom: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Price Range slider</h1>
+        <div class="range-slider">
+            <label for="min-range">Minimum Price </label>
+            <input type="text" value="0" id="min-range" readonly>
+            <br><br>
+            <label for="max-range">Maximum Price </label>
+            <input type="text" id="max-range" readonly>
+
+            <br><br>
+            <input type="range" min="0" max="10000" value="0" id="price-range">
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
