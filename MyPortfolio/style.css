@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +36,8 @@ body {
     background-color: #222222;
     color: #CCCCCC;
     margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -130,8 +132,8 @@ body {
 }
 
 #personal-details .profile {
-    max-width: 35%;
     height: 75vh;
+    display: flex;
 }
 
 #personal-details .profile img {
@@ -148,6 +150,7 @@ body {
 /* About section starts here */
 
 #about-section {
+    margin-top: 2rem;
     max-width: 90%;
     min-width: auto;
     display: flex;
@@ -237,12 +240,14 @@ body {
 /* Skills section starts from here */
 
 #skill-section {
-    max-width: 90%;
+    margin-top: 8rem;
+    max-width: 100%;
+    height: 100vh;
+    min-width: 90%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
     background-color: var(--background-color);
 }
 
@@ -251,20 +256,27 @@ body {
     font-size: 3rem;
     font-weight: 600;
     color: var(--text-color);
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
 }
 
 #skill-section .skill-container {
-    width: 70%;
+    width: 100%;
+    max-width: 80%;
     margin-bottom: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    gap: 2rem 3rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#skill-section .skill{
+    width: 100%;
+
 }
 
 #skill-section .skill .skill-text {
-    width: 70%;
+    max-width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,14 +297,16 @@ body {
 }
 
 progress {
-    width: 70%;
+    width: 100%;
 }
+
 
 /* Skills section end here */
 
 /* Personal Project section starts here */
 
 #personal-project {
+    margin-top: 8rem;
     max-width: 90%;
     height: 100vh;
     background-color: var(--background-color);
@@ -332,13 +346,29 @@ progress {
     margin-top: 2.3rem;
     width: 100%;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     gap: 0 4rem;
 }
 
+@media only screen and (min-width: 768px) {
+    #contact-me form {
+        width: max-width: 95%;
+        display: grid;
+        justify-content: center;
+        place-content: ;-items: center;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    button{
+        width: fit-content;
+        justify-self: flex-end;
+    }
+
+}
+
 #contact-me form .left-input {
-    width: 50%;
+    width: 95%;
 }
 
 #contact-me form label {
@@ -368,7 +398,7 @@ input:focus {
 }
 
 #contact-me form .right-input {
-    width: 50%;
+    max-width: 95%;
     display: flex;
 }
 
@@ -381,7 +411,7 @@ input:focus {
     background-color: #181616;
 }
 
-#contact-me button {
+#contact-me form button {
     font-weight: 400;
     border: 0.558px solid;
     padding: 0.485rem 1rem;
@@ -389,6 +419,7 @@ input:focus {
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
+    align-self: center;
     cursor: pointer;
 }
 
@@ -474,7 +505,7 @@ input:focus {
     }
 
     #personal-details .profile {
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 
@@ -496,6 +527,7 @@ input:focus {
 
     #skill-section .skill-container {
         width: 90%;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
