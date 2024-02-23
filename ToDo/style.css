@@ -56,7 +56,7 @@ input{
     font-weight: 14px;
 }
 
-button{
+#btn{
     border: none;
     outline: 0;
     padding: 11px 20px;
@@ -71,10 +71,37 @@ button{
     list-style: none;
 }
 
-ul > li{
-    margin-bottom: 20px;
+#listItem{
+    display: block;
     display: flex;
-    justify-content: space-around;
+    flex-flow: column wrap;
+}
+/* Style for list items */
+li {
+    list-style-type: none;
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+
+/* Style for delete button */
+.delete-button {
+    float: right;
+    background-color: #ff9999;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit-button{
+    margin-left: 5px;
+    padding: 0.254rem 0.458rem;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    padding: 1rem;
 }
 
 
