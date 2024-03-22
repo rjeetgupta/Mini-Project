@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div id="nav-link">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </header>
+    
+    <main>
+
+        <div class="search-box">
+            <label for="username">Username : </label>
+            <input type="text" id="username" placeholder="Enter your username">
+    
+            <button id="btn">Search</button>
+        </div>
+        <h2 class="heading-text">Github Details</h2>
+
+
+        <div id="details-container">
+
+            <img id="photo" src="" alt="Github Profile Picture">
+
+            <div id="user-details">
+                <span>Name: <span id="name"></span></span>
+                <span>Location: <span id="location"></span></span>
+                <span>Followers: <span id="followers"></span></span>
+                <span>Followings: <span id="followings"></span></span>
+                <span>Public Repo: <span id="repo"></span></span>
+                <span>Created Date: <span id="createDate"></span></span>
+                
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
