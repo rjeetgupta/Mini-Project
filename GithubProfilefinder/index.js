@@ -1,60 +1,95 @@
-// Select the search button element
-const btn = document.getElementById('btn');
+// const lightText = document.querySelector('.light-text')
+// const sun = document.querySelector('.sun');
 
-// Add event listener to the button
-btn.addEventListener('click', async function() {
-    // Get the username from the input field
-    const username = document.getElementById('username').value;
+// function changeLightTheme() {
+//     if (document.body.classList.contains('light-theme')) {
+//         document.body.classList.remove('light-theme');
+//         document.body.classList.add('dark-theme');
+//         sun.src = 'assets/light-theme';
+//         lightText.textContent = 'Light Theme';
+//     } else {
+//         document.body.classList.remove('dark-theme');
+//         document.body.classList.add('light-theme');
+//         sun.src = 'images/moon.png';
+//         lightText.textContent = 'Dark Theme';
+//     }
 
-    // Construct the API URL with the username
-    const apiUrl = `https://api.github.com/users/${username}`;
+//     localStorage.setItem('theme', document.body.classList.contains('light-theme')? 'light' : 'dark');
+// }
 
-    try {
-        // Fetch data from the GitHub API
-        const response = await fetch(apiUrl);
+// lightText.addEventListener('click', changeLightTheme)
+// sun.addEventListener('click', changeLightTheme);
 
-        // Check if the response is successful
-        if (!response.ok) {
-            throw new Error('Failed to fetch GitHub details');
-        }
 
-        // Parse the JSON response
-        const data = await response.json();
 
-        // Update the DOM with the fetched data
-        updateDOM(data);
 
-    } catch (error) {
-        console.error('Fetching data failed:', error.message);
-        // Display an error message to the user
-        alert('Failed to fetch GitHub details. Please try again later.');
+
+const searchBtn = document.querySelector('.searchButton');
+searchBtn.addEventListener('click', () => {
+    
+    console.log("clicked")
+    const searchInput = document.querySelector('.search-input');
+
+    const apiUrl = `https://api.github.com/users/${searchInput.value}`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            updateDom(data);
+            console.log(data);
+        })
+    
+})
+
+const updateDom =  (data) => {
+    document.querySelector('.profilePic').src = data.avatar_url;
+
+    document.querySelector('.name').textContent = data.name;
+
+    document.querySelector('.date').textContent = data.date;
+
+    const getDate = (inputDate) => {
+        // Create a new Date object from the string
+        const date = new Date(inputDate);
+
+        // Options for formatting the date
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+
+        // Format the date as "20 April 2024"
+        return date.toLocaleDateString('en-US', options);
     }
-});
 
-// Function to update the DOM with user data
-function updateDOM(data) {
-    const nameElement = document.getElementById('name');
-    nameElement.innerText = data.name;
+    
+    document.querySelector('.date').textContent = getDate(data.created_at);
 
-    const locationElement = document.getElementById('location');
-    locationElement.innerText = data.location;
+    document.querySelector('.at').textContent = getDate(data.updated_at);
 
-    const photoElement = document.getElementById('photo');
-    photoElement.src = data.avatar_url;
+    document.querySelector('.bio').textContent = data.bio;
 
-    const followersElement = document.getElementById('followers');
-    followersElement.innerText = data.followers;
+    document.querySelector('.repo-value').textContent = data.public_repos;
 
-    const followingsElement = document.getElementById('followings');
-    followingsElement.innerText = data.following;
+    document.querySelector('.followers-value').textContent = data.followers;
 
-    const repoElement = document.getElementById('repo');
-    repoElement.innerText = data.public_repos;
+    document.querySelector('.following-value').textContent = data.following;
 
-    const date = new Date(data.created_at)
-    const createDateElement = document.getElementById('createDate');
-    createDateElement.innerText = date.toDateString();
+    document.querySelector('.location-value').textContent = data.location;
 
-    // Log user details
-    console.log('User details:', data);
+    const twitterLink = data.twitter_username;
+
+    if (twitterLink) {
+        document.querySelector('.twitter-link').textContent = twitterLink;
+    } else {
+        document.querySelector('.twitter-link').textContent = 'Not available';
+    }
+        
+
+
+    // if (twitterUrl) {
+    //     console.log(twitterUrl);
+    //     // twitterUrl.textContent = data.twitter_username;
+    //     // twitterUrl.href = `https://twitter.com/${data.twitter_username}`;
+    // }
+    
+
+    document.querySelector('.profile-url').href = data.html_url;
 }

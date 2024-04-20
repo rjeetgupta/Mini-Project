@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Details</title>
+    <title>GitHub Profile Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo">Logo</div>
-        <div id="nav-link">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Login</a>
-            <a href="#">Contact Us</a>
-        </div>
-    </header>
-    
-    <main>
+    <div class="topBar">
+        <p class="heading">
+            Github Profile Search
+        </p>
+        <p class="light-text">
+            LIGHT
+        </p>
+        <img src="assets/ligthMode-logo.png" alt="" class="sun">
+    </div>
 
-        <div class="search-box">
-            <label for="username">Username : </label>
-            <input type="text" id="username" placeholder="Enter your username">
-    
-            <button id="btn">Search</button>
-        </div>
-        <h2 class="heading-text">Github Details</h2>
+    <div class="searchBar">
+        <img src="assets/search-logo.png" alt="" class="search-logo">
+        <input type="text" class="search-input" placeholder="Seach By GitHub username...">
+        <button class="searchButton">
+            <p>
+                Search
+            </p>
+        </button>
+    </div>
 
-
-        <div id="details-container">
-
-            <img id="photo" src="" alt="Github Profile Picture">
-
-            <div id="user-details">
-                <span>Name: <span id="name"></span></span>
-                <span>Location: <span id="location"></span></span>
-                <span>Followers: <span id="followers"></span></span>
-                <span>Followings: <span id="followings"></span></span>
-                <span>Public Repo: <span id="repo"></span></span>
-                <span>Created Date: <span id="createDate"></span></span>
-                
+    <div class="hero">
+        <img src="assets/profilePic-logo.png" alt="" class="profilePic">
+        <div class="details">
+            <div class="name-and-date">
+                <p class="name">Ranjeet Kumar </p>
+                <p class="date">Joined 25 Jan 2020</p>
+            </div>
+            <p class="at">Updated 2 Aug 2024</p>
+            <p class="bio">This profile has no bio</p>
+            <div class="RFF">
+                <div class="repo">
+                    <p class="repo-text">Repos</p>
+                    <p class="repo-value">8</p>
+                </div>
+                <div class="followers">
+                    <p class="followers-text">Followers</p>
+                    <p class="followers-value">39</p>
+                </div>
+                <div class="following">
+                    <p class="following-text">Following</p>
+                    <p class="following-value">9</p>
+                </div>
+            </div>
+            <div class="data">
+                <div class="row">
+                    <div class="location">
+                        <img src="assets/location-logo.png" alt="" class="location-logo">
+                        <p class="location-value">India</p>
+                    </div>
+                    <div class="twitter">
+                        <img src="assets/twitter-logo.png" alt="" class="twitter-logo">
+                        <p class="twitter-link">Not available</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="github">
+                        <!-- <img src="assets/link-logo.png" alt="" class="link-logo"> -->
+                        <a href="#" target="_blank" class="profile-url">
+                            <p class="github-url">Visit Profile</p>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
             </div>
         </div>
-
-    </main>
-
-    <script src="index.js" defer></script>
+    </div>
 </body>
+<script src="index.js"></script>
+
 </html>
